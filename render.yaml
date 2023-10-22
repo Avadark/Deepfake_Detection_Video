@@ -1,0 +1,5 @@
+services:
+  - name: gradio-app
+    env: python
+    dockerfile: Dockerfile
+    plan: starter

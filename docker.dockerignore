@@ -1,0 +1,8 @@
+__pycache__
+.git
+.gitignore
+.dockerignore
+render.yaml
+*.pyc
+.vscode
+.idea
