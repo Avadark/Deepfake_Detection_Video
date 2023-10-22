@@ -105,7 +105,7 @@ class DetectionPipeline:
 
 detection_pipeline = DetectionPipeline(detector=mtcnn,n_frames=20, batch_size=60)
 
-model = tf.keras.models.load_model("./Detecto-DeepFake_Video_Detector/p1")
+model = tf.keras.models.load_model("./p1")
 
 
 def deepfakespredict(input_video):
