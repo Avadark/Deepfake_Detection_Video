@@ -153,29 +153,29 @@ def deepfakespredict(input_video):
 
 
 
-title="EfficientNetV2 Deepfakes Video Detector"
-description="This is a demo implementation of EfficientNetV2 Deepfakes Image Detector by using frame-by-frame detection. \
-            To use it, simply upload your video, or click one of the examples to load them.\
-            This demo and model represent the Final Year Project titled \"Achieving Face Swapped Deepfakes Detection Using EfficientNetV2\" by a CS undergraduate Lee Sheng Yeh. \
-            The examples were extracted from Celeb-DF(V2)(Li et al, 2020) and FaceForensics++(Rossler et al., 2019). Full reference details is available in \"references.txt.\" \
-            The examples are used under fair use to demo the working of the model only. If any copyright is infringed, please contact the researcher via this email: tp054565@mail.apu.edu.my.\
-            "
+# title="EfficientNetV2 Deepfakes Video Detector"
+# description="This is a demo implementation of EfficientNetV2 Deepfakes Image Detector by using frame-by-frame detection. \
+#             To use it, simply upload your video, or click one of the examples to load them.\
+#             This demo and model represent the Final Year Project titled \"Achieving Face Swapped Deepfakes Detection Using EfficientNetV2\" by a CS undergraduate Lee Sheng Yeh. \
+#             The examples were extracted from Celeb-DF(V2)(Li et al, 2020) and FaceForensics++(Rossler et al., 2019). Full reference details is available in \"references.txt.\" \
+#             The examples are used under fair use to demo the working of the model only. If any copyright is infringed, please contact the researcher via this email: tp054565@mail.apu.edu.my.\
+#             "
             
-examples = [              
-                ['./Detecto-DeepFake_Video_Detector/Video1-fake-1-ff.mp4'],
-                ['./Detecto-DeepFake_Video_Detector/Video6-real-1-ff.mp4'],
-                ['./Detecto-DeepFake_Video_Detector/Video3-fake-3-ff.mp4'],
-                ['./Detecto-DeepFake_Video_Detector/Video8-real-3-ff.mp4'],
-                ['./Detecto-DeepFake_Video_Detector/real-1.mp4'],
-                ['./Detecto-DeepFake_Video_Detector/fake-1.mp4'],
-           ]
+# examples = [              
+#                 ['./Detecto-DeepFake_Video_Detector/Video1-fake-1-ff.mp4'],
+#                 ['./Detecto-DeepFake_Video_Detector/Video6-real-1-ff.mp4'],
+#                 ['./Detecto-DeepFake_Video_Detector/Video3-fake-3-ff.mp4'],
+#                 ['./Detecto-DeepFake_Video_Detector/Video8-real-3-ff.mp4'],
+#                 ['./Detecto-DeepFake_Video_Detector/real-1.mp4'],
+#                 ['./Detecto-DeepFake_Video_Detector/fake-1.mp4'],
+#            ]
            
 gr.Interface(deepfakespredict,
                      inputs = ["video"],
                      outputs=["text","text", gr.outputs.Video(label="Detected face sequence")],
-                     title=title,
-                     description=description,
-                     examples=examples
+                     # title=title,
+                     # description=description,
+                     # examples=examples
                      ).launch()
 
 # # Import the necessary module to interact with the Hugging Face Hub.
